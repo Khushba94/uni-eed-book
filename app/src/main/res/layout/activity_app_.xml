@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".App_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="65dp"
+            android:textSize="25dp" />
+
+
+        <Button
+            android:id="@+id/Buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignStart="@+id/Sell"
+            android:layout_alignTop="@+id/textViewUserEmail"
+            android:layout_gravity="center_horizontal"
+            android:text="BUY" />
+
+        <Button
+            android:id="@+id/Sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/Exchange"
+            android:layout_alignTop="@+id/Buy"
+
+            android:layout_gravity="center_horizontal"
+            android:text="SELL" />
+
+
+        <Button
+        android:id="@+id/Exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonLogout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+            android:layout_alignTop="@+id/Sell"
+            android:layout_gravity="center_horizontal"
+        android:text="EXCHANGE" />
+
+
+
+    <Button
+        android:id="@+id/Exchange_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Exchange"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_alignTop="@+id/Exchange"
+        android:text="View Exchange Books" />
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+
+            android:layout_alignTop="@+id/Exchange_view"
+            android:layout_gravity="center_horizontal"
+            android:text="Logout" />
+    </LinearLayout>
+
+</RelativeLayout>
